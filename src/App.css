@@ -1,0 +1,93 @@
+:root {
+  --border-radius-500: 8px;
+  --color-on-background: #ffffff;
+  --fonts-primary: Karla, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonts-primary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.layout__wrapper {
+  width: 60vw;
+  height: 100vh;
+  overflow: auto;
+
+  border-radius: 3px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.store-container {
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(0, 247, 255);
+  border: 2px solid black;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.item-container {
+  background-color: red;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+}
+
+.double {
+  background-color: yellow;
+}
+
+.items-container.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.item-container.box1 {
+  grid-column: span 1;
+  background-color: burlywood;
+}
+
+.item-container.box2 {
+  grid-column: span 1;
+  background-color: blueviolet;
+}
+
+.item-container.box3 {
+  grid-column: span 1;
+  background-color: blue;
+}
+
+.item-container.box4 {
+  grid-column: span 1;
+  background-color: aqua;
+}
